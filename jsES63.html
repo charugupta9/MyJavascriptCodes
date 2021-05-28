@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template literals</title>
+</head>
+<body>
+    <h1>Template literals and string methods</h1>
+    <p>
+
+    </p>
+    <script>
+        //es5
+        console.log('my name is' + 'charu gupta');
+
+        //es6
+        console.log(`my name is .charu gupta`);
+
+        //es5 
+        let fnmae = 'charu';
+        let lname = 'gupta';
+        console.log('my name is'+ fnmae + lnmae + '.');
+
+        //es6 
+        let fnmaes = 'charu';
+        let lnames = 'gupta';
+        console.log(`my name is ${fnames} + ${lnames}`);
+
+        //We can add expressions too
+        //es5
+        let a = 20;
+        let b = 30;
+        console.log('fifty is '+ (a+b) + 'and not' +  (b - a));
+        //es6
+        console.log(`fifty is ${a+b} and not ${b - a} ` );
+
+        //es6 stringmethods
+        console.log(`${fname}`.startsWith('c'));
+        console.log(`${fnmae}`.endsWith('u'));
+        console.log(`${fnmae}` .includes('ar'));
+        console.log(`${fnmae}` . repeat(5));
+        
+    </script>
+</body>
+</html>
